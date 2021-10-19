@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { getCar } from "../api";
+import BuyCar from "./BuyCar";
 
 class Car extends Component {
   state = {
@@ -23,6 +24,7 @@ class Car extends Component {
         <p>
           {description}, {cost}, {colour}
         </p>
+        <BuyCar car_id={this.props.car_id} />
       </div>
     );
   }

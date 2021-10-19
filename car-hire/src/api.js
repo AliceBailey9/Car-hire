@@ -16,7 +16,13 @@ export const getCar = (car_id) => {
 };
 
 export const sellCar = (car) => {
-  return carsApi.post("./cars/addCar", car).then((res) => {
+  return carsApi.post("./cars/addcar", car).then((res) => {
+    return res.data;
+  });
+};
+
+export const buyCar = (car_id) => {
+  return carsApi.delete(`./cars/${car_id}`).then((res) => {
     return res.data;
   });
 };
