@@ -7,7 +7,7 @@ class Nav extends Component {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/Cars">Cars</Link>
-        <Link to="/SellCar">Sell Car</Link>
+        <Link to="/SellCar">Sell Your Car</Link>
       </nav>
     );
   }

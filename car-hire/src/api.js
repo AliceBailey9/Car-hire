@@ -8,3 +8,15 @@ export const getAllCars = () => {
     return res.data;
   });
 };
+
+export const getCar = (car_id) => {
+  return carsApi.get(`./cars/${car_id}`).then((res) => {
+    return res.data;
+  });
+};
+
+export const sellCar = (car) => {
+  return carsApi.post("./cars/addCar", car).then((res) => {
+    return res.data;
+  });
+};

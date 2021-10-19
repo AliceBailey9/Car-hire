@@ -18,9 +18,8 @@ class AllCars extends Component {
         {this.state.cars.map(({ id, make, model, colour, cost, img }) => {
           return (
             <div key={id}>
-              <Link key={id}>
+              <Link key={id} to={`/Cars/${id}`}>
                 <h1>{make}</h1>
-
                 <h2>{model}</h2>
               </Link>
               <img className="carImages" src={img} alt={model} />
